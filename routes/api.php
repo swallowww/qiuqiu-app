@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Q群机器人事件上报/api/report
+Route::get('/report','QiuqiuController@getReport');
